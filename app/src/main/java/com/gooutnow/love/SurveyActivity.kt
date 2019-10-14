@@ -1,4 +1,4 @@
-package com.dollo.foryou
+package com.gooutnow.love
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,7 +7,7 @@ import android.widget.Button
 import android.widget.SeekBar
 import android.widget.TextView
 
-class QuestionActivity : AppCompatActivity() {
+class SurveyActivity : AppCompatActivity() {
 
     lateinit var questionButton: Button
 
@@ -18,10 +18,10 @@ class QuestionActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_question)
+        setContentView(R.layout.activity_survey)
 
-        HeightSeekBar = findViewById(R.id.height_seek)
-        WeightSeekBar = findViewById(R.id.weight_seek)
+        HeightSeekBar = findViewById(R.id.height_bar)
+        WeightSeekBar = findViewById(R.id.weight_bar)
         height = findViewById(R.id.textView5_height)
         weight = findViewById(R.id.textView8_weight)
         questionButton = findViewById(R.id.questionButton)
@@ -57,7 +57,7 @@ class QuestionActivity : AppCompatActivity() {
         })
 
         questionButton.setOnClickListener {
-            startActivity(Intent(this@QuestionActivity, HowRULookingFor::class.java))
+            startActivity(Intent(this@SurveyActivity, WhatAreYouIshesh::class.java))
         }
     }
 }

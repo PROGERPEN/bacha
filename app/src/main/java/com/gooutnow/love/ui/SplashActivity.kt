@@ -1,26 +1,30 @@
-package com.dollo.foryou.ui
+package com.gooutnow.love.ui
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.net.Uri
 import android.net.http.SslError
+import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.webkit.SslErrorHandler
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.ProgressBar
-import com.github.arturogutierrez.Badges
-import com.github.arturogutierrez.BadgesNotSupportedException
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.yandex.metrica.YandexMetrica
 import com.yandex.metrica.YandexMetricaConfig
-import me.leolin.shortcutbadger.ShortcutBadger
-import com.dollo.foryou.*
-import com.dollo.foryou._core.BaseActivity
+import com.gooutnow.love.*
+import com.gooutnow.love._core.BaseActivity
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.onesignal.OneSignal
 import kotlinx.android.synthetic.main.activity_splash.*
+import org.joda.time.DateTime
+import org.joda.time.Days
 
 
 /**
@@ -37,15 +41,43 @@ class SplashActivity : BaseActivity() {
     val REFERRER_DATA = "REFERRER_DATA"
     val badgeCount = 1
 
+    lateinit var prefs: SharedPreferences
+
+    lateinit var firebaseAnalytic: FirebaseAnalytics
+
     override fun getContentView(): Int = R.layout.activity_web_view
 
 
     override fun initUI() {
         webView = web_view
         progressBar = progress_bar
+
+        prefs = getSharedPreferences("com.gooutnow.love", Context.MODE_PRIVATE)
+
+        checkReturn()
+
+
+        OneSignal.startInit(this)
+            .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
+            .unsubscribeWhenNotificationsAreDisabled(true)
+            .init()
+
     }
 
+    fun checkReturn() {
+        if (prefs.getString("dateInstall", "") != "") {
+            if (Days.daysBetween(DateTime(prefs.getString("dateInstall", "")), DateTime.now()).days == 1) {
+                if (!prefs.getBoolean("rrToday", false)) {
+                    prefs.edit().putString("rr", "RR").apply()
+                    val rrOneBundle = Bundle()
+                    rrOneBundle.putString("RR", "RR")
 
+                    firebaseAnalytic.logEvent("RR", rrOneBundle)
+                    prefs.edit().putBoolean("rrToday", true).apply()
+                }
+            }
+        }
+    }
 
 
     override fun setUI() {
@@ -61,6 +93,13 @@ class SplashActivity : BaseActivity() {
                     val value = dataSnapshot.child(SHOW_IN).value as String
 
                     var taskUrl = dataSnapshot.child(TASK_URL).value.toString()
+
+                    if (prefs.getBoolean("firstrun", true)) {
+                        prefs.edit().putString("dateInstall", DateTime.now().toString()).apply()
+                        prefs.edit().putBoolean("firstrun", false).apply()
+                    }
+
+                    taskUrl = prefs.getString("endurl", taskUrl).toString()
 
                     if (value == WEB_VIEW) {
                             startActivity(
@@ -80,7 +119,7 @@ class SplashActivity : BaseActivity() {
                         finish()
                     }
                 } else if (url.contains("/main")) {
-                    startActivity(Intent(this@SplashActivity, MainActivity::class.java))
+                    startActivity(Intent(this@SplashActivity, StartActivity::class.java))
                     finish()
                 }
                 progressBar.visibility = View.GONE
@@ -90,20 +129,8 @@ class SplashActivity : BaseActivity() {
 
         progressBar.visibility = View.VISIBLE
 
-        val success = ShortcutBadger.applyCount(this, badgeCount)
-        if (!success) {
-            startService(
-                    Intent(this, BadgeIntentService::class.java).putExtra("badgeCount", badgeCount)
-            )
-        }
 
-        try {
-            Badges.setBadge(this, badgeCount)
-        } catch (badgesNotSupportedException: BadgesNotSupportedException) {
-            Log.d("SplashActivityBadge", badgesNotSupportedException.message)
-        }
-
-        val config = YandexMetricaConfig.newConfigBuilder("ff593efa-7f29-49ca-9283-f8844477f943").build()
+        val config = YandexMetricaConfig.newConfigBuilder("5e5f69d6-f8d8-4804-9f2e-6bce8c2fd8e9").build()
         YandexMetrica.activate(this, config)
         YandexMetrica.enableActivityAutoTracking(this.application)
 

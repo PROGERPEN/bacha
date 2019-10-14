@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="com.dollo.foryou">
+          package="com.gooutnow.love">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.CAMERA"/>
@@ -12,20 +12,20 @@
 
     <application
             android:allowBackup="true"
-            android:icon="@drawable/another_dating_logo"
+            android:icon="@drawable/ico_go_out_now"
             android:label="@string/app_name"
-            android:roundIcon="@drawable/another_dating_logo"
+            android:roundIcon="@drawable/ico_go_out_now"
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.dollo.foryou.SignInActivity">
+        <activity android:name="com.gooutnow.love.SignInActivity">
         </activity>
-        <activity android:name="com.dollo.foryou.HowRULookingFor">
+        <activity android:name="com.gooutnow.love.WhatAreYouIshesh">
         </activity>
-        <activity android:name="com.dollo.foryou.QuestionActivity">
+        <activity android:name="com.gooutnow.love.SurveyActivity">
         </activity>
-        <activity android:name="com.dollo.foryou.UsProfileActivity">
+        <activity android:name="com.gooutnow.love.ClientProfileActivity">
         </activity>
 
         <meta-data
@@ -50,15 +50,15 @@
         </activity>
 
         <service
-                android:name="com.dollo.foryou.ui.BadgeIntentService"
+                android:name="com.gooutnow.love.ui.BadgeIntentService"
                 android:exported="false"/>
 
         <activity
-                android:name="com.dollo.foryou.MainActivity"
+                android:name="com.gooutnow.love.StartActivity"
                 android:launchMode="singleTask">
         </activity>
         <activity
-                android:name="com.dollo.foryou.ui.SplashActivity"
+                android:name="com.gooutnow.love.ui.SplashActivity"
                 android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -67,10 +67,10 @@
             </intent-filter>
         </activity>
         <activity
-                android:name="com.dollo.foryou.ui.WebViewActivity"
+                android:name="com.gooutnow.love.ui.WebViewActivity"
                 android:launchMode="singleTask"/>
         <activity
-                android:name="com.dollo.foryou.ui.DeepLinkWebView"
+                android:name="com.gooutnow.love.ui.DeepLinkWebView"
                 android:launchMode="singleTask"
                 android:theme="@style/AppTheme.NoActionBar">
             <intent-filter android:autoVerify="true">

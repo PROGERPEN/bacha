@@ -1,4 +1,4 @@
-package com.dollo.foryou
+package com.gooutnow.love
 
 import com.google.firebase.database.IgnoreExtraProperties
 import com.google.firebase.database.PropertyName

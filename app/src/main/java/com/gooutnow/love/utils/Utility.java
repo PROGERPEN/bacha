@@ -1,4 +1,4 @@
-package com.dollo.foryou.utils;
+package com.gooutnow.love.utils;
 
 import android.Manifest;
 import android.annotation.TargetApi;

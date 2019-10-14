@@ -1,4 +1,4 @@
-package com.dollo.foryou._core
+package com.gooutnow.love._core
 
 import android.os.Bundle
 import androidx.annotation.LayoutRes
@@ -11,8 +11,8 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings
-import com.dollo.foryou.BuildConfig
-import com.dollo.foryou.R
+import com.gooutnow.love.BuildConfig
+import com.gooutnow.love.R
 
 
 /**

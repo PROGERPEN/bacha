@@ -1,4 +1,4 @@
-package com.dollo.foryou
+package com.gooutnow.love
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -13,10 +13,10 @@ class SignInActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)
 
-        logInButton = findViewById(R.id.sign_in_button)
+        logInButton = findViewById(R.id.log_in_button)
 
         logInButton.setOnClickListener {
-            startActivity(Intent(this@SignInActivity, UsProfileActivity::class.java))
+            startActivity(Intent(this@SignInActivity, ClientProfileActivity::class.java))
         }
     }
 }

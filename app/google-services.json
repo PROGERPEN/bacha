@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "655125982622",
-    "firebase_url": "https://dolloalexfb.firebaseio.com",
-    "project_id": "dolloalexfb",
-    "storage_bucket": "dolloalexfb.appspot.com"
+    "project_number": "179042462596",
+    "firebase_url": "https://gooutnow-13ab5.firebaseio.com",
+    "project_id": "gooutnow-13ab5",
+    "storage_bucket": "gooutnow-13ab5.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:655125982622:android:7670a46eca20eb88",
+        "mobilesdk_app_id": "1:179042462596:android:f94f4713c22a92e58c0bd1",
         "android_client_info": {
-          "package_name": "com.dollo.foryou"
+          "package_name": "com.gooutnow.love"
         }
       },
       "oauth_client": [
         {
-          "client_id": "655125982622-hd4nnhj5lhdoocq69q7271tm3423tg46.apps.googleusercontent.com",
+          "client_id": "179042462596-cj7kooc9q66ub34j22tobah0iokeqer5.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB4mRhjsBZswYKYAevzqunLUIiCXpNhX9Y"
+          "current_key": "AIzaSyDHKDxxc9EFIBkaYuqFWg9237vPXX_C6MM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "655125982622-hd4nnhj5lhdoocq69q7271tm3423tg46.apps.googleusercontent.com",
+              "client_id": "179042462596-cj7kooc9q66ub34j22tobah0iokeqer5.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

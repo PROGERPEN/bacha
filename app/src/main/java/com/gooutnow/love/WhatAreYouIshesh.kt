@@ -1,22 +1,22 @@
-package com.dollo.foryou
+package com.gooutnow.love
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class HowRULookingFor : AppCompatActivity() {
+class WhatAreYouIshesh : AppCompatActivity() {
 
     lateinit var whoLookingFor: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_how_r_u_looking_for)
+        setContentView(R.layout.activity_what_are_you_ishesh)
 
-        whoLookingFor = findViewById(R.id.looking_for_button)
+        whoLookingFor = findViewById(R.id.ishesh_next_button)
 
         whoLookingFor.setOnClickListener {
-            startActivity(Intent(this@HowRULookingFor, UsProfileActivity::class.java))
+            startActivity(Intent(this@WhatAreYouIshesh, ClientProfileActivity::class.java))
         }
     }
 }
