@@ -7,7 +7,7 @@
                 android:background="@drawable/main_bg"
                 android:orientation="vertical"
 
-                tools:context=".StartActivity">
+                tools:context=".GlavnayaActivity">
 
     <ImageView
 
@@ -29,7 +29,7 @@
             android:id="@+id/view1"
             android:layout_width="fill_parent"
             android:layout_height="1dp"
-            android:layout_above="@id/acc_create_button"
+            android:layout_above="@id/sozdat_acc_button"
             android:layout_marginLeft="24dp"
             android:layout_marginTop="16dp"
             android:layout_marginRight="24dp"
@@ -38,7 +38,7 @@
             android:background="#c0c0c0" />
 
     <Button
-            android:id="@+id/acc_create_button"
+            android:id="@+id/sozdat_acc_button"
             style="@style/button_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
 
         <Button
 
-                android:id="@+id/log_in_button"
+                android:id="@+id/vhod_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent"

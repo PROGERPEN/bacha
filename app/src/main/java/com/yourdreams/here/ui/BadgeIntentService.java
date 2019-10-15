@@ -1,4 +1,4 @@
-package com.gooutnow.love.ui;
+package com.yourdreams.here.ui;
 
 import android.annotation.TargetApi;
 import android.app.IntentService;
@@ -8,7 +8,7 @@ import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
-import com.gooutnow.love.R;
+import com.yourdreams.here.R;
 import me.leolin.shortcutbadger.ShortcutBadger;
 
 public class BadgeIntentService extends IntentService {

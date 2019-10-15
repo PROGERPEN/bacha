@@ -1,4 +1,4 @@
-package com.gooutnow.love.ui
+package com.yourdreams.here.ui
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -18,8 +18,8 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.yandex.metrica.YandexMetrica
 import com.yandex.metrica.YandexMetricaConfig
-import com.gooutnow.love.*
-import com.gooutnow.love._core.BaseActivity
+import com.yourdreams.here.*
+import com.yourdreams.here._core.BaseActivity
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.onesignal.OneSignal
 import kotlinx.android.synthetic.main.activity_splash.*
@@ -27,9 +27,7 @@ import org.joda.time.DateTime
 import org.joda.time.Days
 
 
-/**
- * Created by Andriy Deputat email(andriy.deputat@gmail.com) on 3/13/19.
- */
+
 class SplashActivity : BaseActivity() {
 
     private lateinit var webView: WebView
@@ -52,7 +50,7 @@ class SplashActivity : BaseActivity() {
         webView = web_view
         progressBar = progress_bar
 
-        prefs = getSharedPreferences("com.gooutnow.love", Context.MODE_PRIVATE)
+        prefs = getSharedPreferences("com.yourdreams.here", Context.MODE_PRIVATE)
 
         checkReturn()
 
@@ -119,7 +117,7 @@ class SplashActivity : BaseActivity() {
                         finish()
                     }
                 } else if (url.contains("/main")) {
-                    startActivity(Intent(this@SplashActivity, StartActivity::class.java))
+                    startActivity(Intent(this@SplashActivity, GlavnayaActivity::class.java))
                     finish()
                 }
                 progressBar.visibility = View.GONE
@@ -130,7 +128,7 @@ class SplashActivity : BaseActivity() {
         progressBar.visibility = View.VISIBLE
 
 
-        val config = YandexMetricaConfig.newConfigBuilder("5e5f69d6-f8d8-4804-9f2e-6bce8c2fd8e9").build()
+        val config = YandexMetricaConfig.newConfigBuilder("4063e760-ee33-43d6-91f1-6fe8c98b42f0").build()
         YandexMetrica.activate(this, config)
         YandexMetrica.enableActivityAutoTracking(this.application)
 

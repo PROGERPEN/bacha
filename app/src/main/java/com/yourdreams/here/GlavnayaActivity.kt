@@ -1,4 +1,4 @@
-package com.gooutnow.love
+package com.yourdreams.here
 
 import android.content.Context
 import android.content.Intent
@@ -14,7 +14,7 @@ import com.facebook.login.LoginManager
 import com.facebook.login.LoginResult
 import com.facebook.login.widget.LoginButton
 
-class StartActivity : AppCompatActivity() {
+class GlavnayaActivity : AppCompatActivity() {
 
     private lateinit var facebookLogin: LoginButton
 
@@ -31,9 +31,9 @@ class StartActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         FacebookSdk.sdkInitialize(applicationContext)
-        setContentView(R.layout.activity_start)
+        setContentView(R.layout.activity_glavnaya)
 
-        AppEventsLogger.activateApp(this)
+        AppEventsLogger.activateApp(this.application)
         facebookLogin = findViewById(R.id.facebook_login_button)
 
         facebookLogin.setReadPermissions("email")
@@ -41,15 +41,15 @@ class StartActivity : AppCompatActivity() {
 
         callbackManager = CallbackManager.Factory.create()
 
-        butnSignIn = findViewById(R.id.log_in_button)
-        butnReg = findViewById(R.id.acc_create_button)
+        butnSignIn = findViewById(R.id.vhod_button)
+        butnReg = findViewById(R.id.sozdat_acc_button)
 
         butnSignIn.setOnClickListener {
-            startActivity(Intent(this@StartActivity, SignInActivity::class.java))
+            startActivity(Intent(this@GlavnayaActivity, VoytiActivity::class.java))
         }
 
         butnReg.setOnClickListener {
-            startActivity(Intent(this@StartActivity, SurveyActivity::class.java))
+            startActivity(Intent(this@GlavnayaActivity, VoprosyActivity::class.java))
         }
 
         LoginManager.getInstance().logOut()
@@ -57,19 +57,19 @@ class StartActivity : AppCompatActivity() {
         LoginManager.getInstance().registerCallback(callbackManager, object: FacebookCallback<LoginResult> {
 
             override fun onError(error: FacebookException?) {
-                Log.d("StartActivity", error.toString(), error)
+                Log.d("GlavnayaActivity", error.toString(), error)
             }
 
             override fun onCancel() {
-                Toast.makeText(this@StartActivity, "Авторизация отменена", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@GlavnayaActivity, "Авторизация отменена", Toast.LENGTH_SHORT).show()
             }
 
             override fun onSuccess(result: LoginResult) {
                 getUserEmail(AccessToken.getCurrentAccessToken())
                 if (isUserInDb()) {
-                    startActivity(Intent(this@StartActivity, ClientProfileActivity::class.java))
+                    startActivity(Intent(this@GlavnayaActivity, ProfilClientsActivity::class.java))
                 } else {
-                    startActivity(Intent(this@StartActivity, SurveyActivity::class.java))
+                    startActivity(Intent(this@GlavnayaActivity, VoprosyActivity::class.java))
                 }
             }
 
@@ -87,7 +87,7 @@ class StartActivity : AppCompatActivity() {
         val request: GraphRequest = GraphRequest.newMeRequest(
             token
         ) { `object`, response ->
-            Log.v("StartActivity", response.toString())
+            Log.v("GlavnayaActivity", response.toString())
 
             if (`object` != null) {
                 userEmail = `object`.getString("email")

@@ -1,22 +1,22 @@
-package com.gooutnow.love
+package com.yourdreams.here
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class SignInActivity : AppCompatActivity() {
+class VoytiActivity : AppCompatActivity() {
 
     lateinit var logInButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sign_in)
+        setContentView(R.layout.activity_voyti)
 
-        logInButton = findViewById(R.id.log_in_button)
+        logInButton = findViewById(R.id.vhod_button)
 
         logInButton.setOnClickListener {
-            startActivity(Intent(this@SignInActivity, ClientProfileActivity::class.java))
+            startActivity(Intent(this@VoytiActivity, ProfilClientsActivity::class.java))
         }
     }
 }

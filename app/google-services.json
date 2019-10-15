@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "179042462596",
-    "firebase_url": "https://gooutnow-13ab5.firebaseio.com",
-    "project_id": "gooutnow-13ab5",
-    "storage_bucket": "gooutnow-13ab5.appspot.com"
+    "project_number": "631308360922",
+    "firebase_url": "https://yourdreamshere-b1398.firebaseio.com",
+    "project_id": "yourdreamshere-b1398",
+    "storage_bucket": "yourdreamshere-b1398.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:179042462596:android:f94f4713c22a92e58c0bd1",
+        "mobilesdk_app_id": "1:631308360922:android:69de87baafcf3fc1e399e3",
         "android_client_info": {
-          "package_name": "com.gooutnow.love"
+          "package_name": "com.yourdreams.here"
         }
       },
       "oauth_client": [
         {
-          "client_id": "179042462596-cj7kooc9q66ub34j22tobah0iokeqer5.apps.googleusercontent.com",
+          "client_id": "631308360922-e3n5t7tfniosni6a28kpvjen317novve.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDHKDxxc9EFIBkaYuqFWg9237vPXX_C6MM"
+          "current_key": "AIzaSyD37F1qhGhAMTkKZa_Eod5UAsWiVCR0hp0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "179042462596-cj7kooc9q66ub34j22tobah0iokeqer5.apps.googleusercontent.com",
+              "client_id": "631308360922-e3n5t7tfniosni6a28kpvjen317novve.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

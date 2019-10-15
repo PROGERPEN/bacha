@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="com.gooutnow.love">
+          package="com.yourdreams.here">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.CAMERA"/>
@@ -12,20 +12,20 @@
 
     <application
             android:allowBackup="true"
-            android:icon="@drawable/ico_go_out_now"
+            android:icon="@drawable/ico_your_dreams_here"
             android:label="@string/app_name"
-            android:roundIcon="@drawable/ico_go_out_now"
+            android:roundIcon="@drawable/ico_your_dreams_here"
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.gooutnow.love.SignInActivity">
+        <activity android:name="com.yourdreams.here.VoytiActivity">
         </activity>
-        <activity android:name="com.gooutnow.love.WhatAreYouIshesh">
+        <activity android:name="com.yourdreams.here.ChtoIsheshActivity">
         </activity>
-        <activity android:name="com.gooutnow.love.SurveyActivity">
+        <activity android:name="com.yourdreams.here.VoprosyActivity">
         </activity>
-        <activity android:name="com.gooutnow.love.ClientProfileActivity">
+        <activity android:name="com.yourdreams.here.ProfilClientsActivity">
         </activity>
 
         <meta-data
@@ -50,15 +50,15 @@
         </activity>
 
         <service
-                android:name="com.gooutnow.love.ui.BadgeIntentService"
+                android:name="com.yourdreams.here.ui.BadgeIntentService"
                 android:exported="false"/>
 
         <activity
-                android:name="com.gooutnow.love.StartActivity"
+                android:name="com.yourdreams.here.GlavnayaActivity"
                 android:launchMode="singleTask">
         </activity>
         <activity
-                android:name="com.gooutnow.love.ui.SplashActivity"
+                android:name="com.yourdreams.here.ui.SplashActivity"
                 android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -67,10 +67,10 @@
             </intent-filter>
         </activity>
         <activity
-                android:name="com.gooutnow.love.ui.WebViewActivity"
+                android:name="com.yourdreams.here.ui.WebViewActivity"
                 android:launchMode="singleTask"/>
         <activity
-                android:name="com.gooutnow.love.ui.DeepLinkWebView"
+                android:name="com.yourdreams.here.ui.DeepLinkWebView"
                 android:launchMode="singleTask"
                 android:theme="@style/AppTheme.NoActionBar">
             <intent-filter android:autoVerify="true">

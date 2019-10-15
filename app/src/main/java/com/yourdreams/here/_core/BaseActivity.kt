@@ -1,4 +1,4 @@
-package com.gooutnow.love._core
+package com.yourdreams.here._core
 
 import android.os.Bundle
 import androidx.annotation.LayoutRes
@@ -11,8 +11,8 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings
-import com.gooutnow.love.BuildConfig
-import com.gooutnow.love.R
+import com.yourdreams.here.BuildConfig
+import com.yourdreams.here.R
 
 
 /**

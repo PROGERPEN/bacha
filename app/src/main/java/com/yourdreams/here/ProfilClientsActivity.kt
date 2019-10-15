@@ -1,12 +1,12 @@
-package com.gooutnow.love
+package com.yourdreams.here
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class ClientProfileActivity : AppCompatActivity() {
+class ProfilClientsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_client_profile)
+        setContentView(R.layout.activity_profil_clienta)
     }
 }

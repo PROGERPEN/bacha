@@ -1,4 +1,4 @@
-package com.gooutnow.love
+package com.yourdreams.here
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,7 +7,7 @@ import android.widget.Button
 import android.widget.SeekBar
 import android.widget.TextView
 
-class SurveyActivity : AppCompatActivity() {
+class VoprosyActivity : AppCompatActivity() {
 
     lateinit var questionButton: Button
 
@@ -18,13 +18,13 @@ class SurveyActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_survey)
+        setContentView(R.layout.activity_voprosy)
 
-        HeightSeekBar = findViewById(R.id.height_bar)
-        WeightSeekBar = findViewById(R.id.weight_bar)
+        HeightSeekBar = findViewById(R.id.rost_bar)
+        WeightSeekBar = findViewById(R.id.ves_bar)
         height = findViewById(R.id.textView5_height)
         weight = findViewById(R.id.textView8_weight)
-        questionButton = findViewById(R.id.questionButton)
+        questionButton = findViewById(R.id.voprosi_button)
 
         WeightSeekBar.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener{
             override fun onStopTrackingTouch(seekBar: SeekBar) {
@@ -57,7 +57,7 @@ class SurveyActivity : AppCompatActivity() {
         })
 
         questionButton.setOnClickListener {
-            startActivity(Intent(this@SurveyActivity, WhatAreYouIshesh::class.java))
+            startActivity(Intent(this@VoprosyActivity, ChtoIsheshActivity::class.java))
         }
     }
 }

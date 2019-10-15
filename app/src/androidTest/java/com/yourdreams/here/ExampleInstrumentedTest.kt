@@ -1,4 +1,4 @@
-package com.gooutnow.love
+package com.yourdreams.here
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4
