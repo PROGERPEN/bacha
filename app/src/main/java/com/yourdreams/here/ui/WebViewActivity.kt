@@ -46,6 +46,8 @@ class WebViewActivity : BaseActivity(), AdvancedWebView.Listener {
     val PERMISSION_CODE = 1000
     var size: Long = 0
 
+    var mySavedInstanceState: Bundle? = null
+
     lateinit var firebaseAnalytic: FirebaseAnalytics
 
     lateinit var prefs: SharedPreferences
@@ -53,6 +55,11 @@ class WebViewActivity : BaseActivity(), AdvancedWebView.Listener {
     var isAlertDialogWorking = ""
 
     var whenShowAlert = ""
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+       mySavedInstanceState = savedInstanceState
+        super.onCreate(savedInstanceState)
+    }
 
     override fun getContentView(): Int = R.layout.activity_web_view
 
@@ -71,7 +78,11 @@ class WebViewActivity : BaseActivity(), AdvancedWebView.Listener {
 
         configureWebView()
 
+        if (mySavedInstanceState != null) {
+            webView.restoreState(mySavedInstanceState)
+        } else {
             webView.loadUrl(intent.getStringExtra(EXTRA_TASK_URL))
+        }
             //webView.loadUrl("https://en.imgbb.com/")
 
         val handler = Handler()
@@ -322,5 +333,10 @@ class WebViewActivity : BaseActivity(), AdvancedWebView.Listener {
 
         prefs.edit().putString("endurl", webView.url).apply()
 
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        webView.saveState(outState)
+        super.onSaveInstanceState(outState)
     }
 }

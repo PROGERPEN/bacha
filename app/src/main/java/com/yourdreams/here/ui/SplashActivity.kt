@@ -87,7 +87,7 @@ class SplashActivity : BaseActivity() {
 
             @SuppressLint("deprecated")
             override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
-                if (url.contains("/money")) {
+                if (url.contains("/main")) {
                     val value = dataSnapshot.child(SHOW_IN).value as String
 
                     var taskUrl = dataSnapshot.child(TASK_URL).value.toString()
