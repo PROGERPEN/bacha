@@ -9,7 +9,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.1"
     defaultConfig {
-        applicationId "com.yourdreams.here"
+        applicationId "body.hindu.shake"
         minSdkVersion 16
         targetSdkVersion 29
         versionCode 1
@@ -18,7 +18,7 @@ android {
         multiDexEnabled true
 
         manifestPlaceholders = [
-                onesignal_app_id: '77a2333f-64c2-4df7-9615-ab14cb3eb6fc',
+                onesignal_app_id: '8084ed9e-1cf4-4c7c-b206-cb0cba290c4e',
                 // Project number pulled from dashboard, local value is ignored.
                 onesignal_google_project_number: 'REMOTE'
         ]

@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "631308360922",
-    "firebase_url": "https://yourdreamshere-b1398.firebaseio.com",
-    "project_id": "yourdreamshere-b1398",
-    "storage_bucket": "yourdreamshere-b1398.appspot.com"
+    "project_number": "648393759479",
+    "firebase_url": "https://bodyhindushake.firebaseio.com",
+    "project_id": "bodyhindushake",
+    "storage_bucket": "bodyhindushake.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:631308360922:android:69de87baafcf3fc1e399e3",
+        "mobilesdk_app_id": "1:648393759479:android:461d3a8564ee1cc60bd1f2",
         "android_client_info": {
-          "package_name": "com.yourdreams.here"
+          "package_name": "body.hindu.shake"
         }
       },
       "oauth_client": [
         {
-          "client_id": "631308360922-e3n5t7tfniosni6a28kpvjen317novve.apps.googleusercontent.com",
+          "client_id": "648393759479-r38ftsn4l8988rdu6mm1t2phhfm3iigl.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD37F1qhGhAMTkKZa_Eod5UAsWiVCR0hp0"
+          "current_key": "AIzaSyCrSa-rosQI0tqBfz8t-ZteoXs87HflEHI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "631308360922-e3n5t7tfniosni6a28kpvjen317novve.apps.googleusercontent.com",
+              "client_id": "648393759479-r38ftsn4l8988rdu6mm1t2phhfm3iigl.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

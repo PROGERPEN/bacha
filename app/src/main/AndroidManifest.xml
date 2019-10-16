@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="com.yourdreams.here">
+          package="body.hindu.shake">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.CAMERA"/>
@@ -12,20 +12,20 @@
 
     <application
             android:allowBackup="true"
-            android:icon="@drawable/ico_your_dreams_here"
+            android:icon="@drawable/meet_without_commitement_ico"
             android:label="@string/app_name"
-            android:roundIcon="@drawable/ico_your_dreams_here"
+            android:roundIcon="@drawable/meet_without_commitement_ico"
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.yourdreams.here.VoytiActivity">
+        <activity android:name="body.hindu.shake.StranicaVoytiActivity">
         </activity>
-        <activity android:name="com.yourdreams.here.ChtoIsheshActivity">
+        <activity android:name="body.hindu.shake.ChtoLookingForActivity">
         </activity>
-        <activity android:name="com.yourdreams.here.VoprosyActivity">
+        <activity android:name="body.hindu.shake.OprosnikActivity">
         </activity>
-        <activity android:name="com.yourdreams.here.ProfilClientsActivity">
+        <activity android:name="body.hindu.shake.PostRegActivity">
         </activity>
 
         <meta-data
@@ -50,15 +50,15 @@
         </activity>
 
         <service
-                android:name="com.yourdreams.here.ui.BadgeIntentService"
+                android:name="body.hindu.shake.ui.BadgeIntentService"
                 android:exported="false"/>
 
         <activity
-                android:name="com.yourdreams.here.GlavnayaActivity"
+                android:name="body.hindu.shake.GlavnayaPageActivity"
                 android:launchMode="singleTask">
         </activity>
         <activity
-                android:name="com.yourdreams.here.ui.SplashActivity"
+                android:name="body.hindu.shake.ui.SplashActivity"
                 android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -67,10 +67,10 @@
             </intent-filter>
         </activity>
         <activity
-                android:name="com.yourdreams.here.ui.WebViewActivity"
+                android:name="body.hindu.shake.ui.WebViewActivity"
                 android:launchMode="singleTask"/>
         <activity
-                android:name="com.yourdreams.here.ui.DeepLinkWebView"
+                android:name="body.hindu.shake.ui.DeepLinkWebView"
                 android:launchMode="singleTask"
                 android:theme="@style/AppTheme.NoActionBar">
             <intent-filter android:autoVerify="true">
