@@ -28,7 +28,7 @@ android:background="#ffcfe2 ">
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/psevdonim_edit_text" android:layout_marginEnd="8dp"
+            android:id="@+id/vidumannoe_imya_red_pole" android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/nick_tview"
             android:layout_marginStart="16dp" app:layout_constraintStart_toStartOf="parent"
@@ -41,7 +41,7 @@ android:background="#ffcfe2 ">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/birth_date_tview" android:layout_marginTop="60dp"
-            app:layout_constraintTop_toBottomOf="@+id/psevdonim_edit_text"
+            app:layout_constraintTop_toBottomOf="@+id/vidumannoe_imya_red_pole"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
@@ -60,19 +60,19 @@ android:background="#ffcfe2 ">
             app:layout_constraintVertical_bias="0.058" android:id="@+id/linearLayout2">
 
         <Spinner
-                android:id="@+id/dni_spinnerukha"
+                android:id="@+id/days_krutilka"
                 android:entries="@array/days"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
         <Spinner
-                android:id="@+id/mesyaci_spinnerukha"
+                android:id="@+id/monthes_krutilka"
                 android:entries="@array/months"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
         <Spinner
-                android:id="@+id/god_spinnerukha"
+                android:id="@+id/years_krutilka"
                 android:entries="@array/years"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
@@ -103,7 +103,7 @@ android:background="#ffcfe2 ">
             app:layout_constraintVertical_bias="0.0"/>
 
     <SeekBar
-            android:id="@+id/seek_rost_bar"
+            android:id="@+id/seek_height_bar"
             style="@style/Widget.AppCompat.SeekBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -136,7 +136,7 @@ android:background="#ffcfe2 ">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/weight_tview" android:layout_marginTop="24dp"
-            app:layout_constraintTop_toBottomOf="@+id/seek_rost_bar" android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/seek_height_bar" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
@@ -150,13 +150,13 @@ android:background="#ffcfe2 ">
             android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/seek_rost_bar" android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/seek_height_bar" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.97"
             app:layout_constraintVertical_bias="0.12"/>
     <SeekBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/seek_ves_bar"
+            android:id="@+id/seek_weight_bar"
             android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
@@ -170,7 +170,7 @@ android:background="#ffcfe2 ">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/race_textview" android:layout_marginTop="60dp"
-            app:layout_constraintTop_toBottomOf="@+id/seek_ves_bar" android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/seek_weight_bar" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
@@ -180,12 +180,12 @@ android:background="#ffcfe2 ">
             android:layout_width="wrap_content"
             android:entries="@array/races"
             android:layout_height="wrap_content"
-            android:id="@+id/rasa_spinnerukha" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/rasa_spinnerukha_vibor" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp" app:layout_constraintStart_toEndOf="@+id/race_textview"
             android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/seek_ves_bar"
+            app:layout_constraintTop_toBottomOf="@+id/seek_weight_bar"
             app:layout_constraintHorizontal_bias="0.805"
             app:layout_constraintVertical_bias="0.481"/>
     <Button
@@ -193,7 +193,7 @@ android:background="#ffcfe2 ">
             android:drawableEnd="@drawable/arrow_right_24_icon"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/voprosi_knopka" app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/question_knopka" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginBottom="8dp"

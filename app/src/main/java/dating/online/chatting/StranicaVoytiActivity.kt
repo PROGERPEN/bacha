@@ -1,4 +1,4 @@
-package body.hindu.shake
+package dating.online.chatting
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -13,10 +13,10 @@ class StranicaVoytiActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_stranica_voyti)
 
-        logInButton = findViewById(R.id.vhod_knopka)
+        logInButton = findViewById(R.id.sign_in_knopochka)
 
         logInButton.setOnClickListener {
-            startActivity(Intent(this@StranicaVoytiActivity, PostRegActivity::class.java))
+            startActivity(Intent(this@StranicaVoytiActivity, KonechnayaActivity::class.java))
         }
     }
 }

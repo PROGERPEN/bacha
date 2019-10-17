@@ -1,4 +1,4 @@
-package body.hindu.shake.ui
+package dating.online.chatting.ui
 
 import android.annotation.SuppressLint
 import android.annotation.TargetApi
@@ -20,9 +20,9 @@ import android.view.View
 import android.webkit.*
 import android.widget.ProgressBar
 import androidx.core.app.ActivityCompat
-import body.hindu.shake.EXTRA_TASK_URL
-import body.hindu.shake.R
-import body.hindu.shake._core.BaseActivity
+import dating.online.chatting.EXTRA_TASK_URL
+import dating.online.chatting.R
+import dating.online.chatting._core.BaseActivity
 import com.google.firebase.analytics.FirebaseAnalytics
 import im.delight.android.webview.AdvancedWebView
 import kotlinx.android.synthetic.main.activity_web_view.*

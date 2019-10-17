@@ -1,4 +1,4 @@
-package body.hindu.shake.utils;
+package dating.online.chatting.utils;
 
 import android.Manifest;
 import android.annotation.TargetApi;

@@ -1,4 +1,4 @@
-package body.hindu.shake
+package dating.online.chatting
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4

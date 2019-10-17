@@ -1,4 +1,4 @@
-package body.hindu.shake
+package dating.online.chatting
 
 import org.junit.Test
 

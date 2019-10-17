@@ -1,4 +1,4 @@
-package body.hindu.shake
+package dating.online.chatting
 
 import android.content.Context
 import android.content.Intent
@@ -14,7 +14,7 @@ import com.facebook.login.LoginManager
 import com.facebook.login.LoginResult
 import com.facebook.login.widget.LoginButton
 
-class GlavnayaPageActivity : AppCompatActivity() {
+class MainStranicaActivity : AppCompatActivity() {
 
     private lateinit var facebookLogin: LoginButton
 
@@ -31,25 +31,25 @@ class GlavnayaPageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         FacebookSdk.sdkInitialize(applicationContext)
-        setContentView(R.layout.activity_glavnaya_page)
+        setContentView(R.layout.activity_main_stranica)
 
         AppEventsLogger.activateApp(this.application)
-        facebookLogin = findViewById(R.id.lico_kniga_login_button)
+        facebookLogin = findViewById(R.id.reptiloid_company_button)
 
         facebookLogin.setReadPermissions("email")
         prefs = getSharedPreferences("com.love.anotherdating", Context.MODE_PRIVATE)
 
         callbackManager = CallbackManager.Factory.create()
 
-        butnSignIn = findViewById(R.id.vhod_knopka)
-        butnReg = findViewById(R.id.sozdat_acc_knopka)
+        butnSignIn = findViewById(R.id.sign_in_knopochka)
+        butnReg = findViewById(R.id.create_acc_knopochka)
 
         butnSignIn.setOnClickListener {
-            startActivity(Intent(this@GlavnayaPageActivity, StranicaVoytiActivity::class.java))
+            startActivity(Intent(this@MainStranicaActivity, StranicaVoytiActivity::class.java))
         }
 
         butnReg.setOnClickListener {
-            startActivity(Intent(this@GlavnayaPageActivity, OprosnikActivity::class.java))
+            startActivity(Intent(this@MainStranicaActivity, AnketkaActivity::class.java))
         }
 
         LoginManager.getInstance().logOut()
@@ -57,19 +57,19 @@ class GlavnayaPageActivity : AppCompatActivity() {
         LoginManager.getInstance().registerCallback(callbackManager, object: FacebookCallback<LoginResult> {
 
             override fun onError(error: FacebookException?) {
-                Log.d("GlavnayaPageActivity", error.toString(), error)
+                Log.d("MainStranicaActivity", error.toString(), error)
             }
 
             override fun onCancel() {
-                Toast.makeText(this@GlavnayaPageActivity, "Авторизация отменена", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@MainStranicaActivity, "Авторизация отменена", Toast.LENGTH_SHORT).show()
             }
 
             override fun onSuccess(result: LoginResult) {
                 getUserEmail(AccessToken.getCurrentAccessToken())
                 if (isUserInDb()) {
-                    startActivity(Intent(this@GlavnayaPageActivity, PostRegActivity::class.java))
+                    startActivity(Intent(this@MainStranicaActivity, KonechnayaActivity::class.java))
                 } else {
-                    startActivity(Intent(this@GlavnayaPageActivity, OprosnikActivity::class.java))
+                    startActivity(Intent(this@MainStranicaActivity, AnketkaActivity::class.java))
                 }
             }
 
@@ -87,7 +87,7 @@ class GlavnayaPageActivity : AppCompatActivity() {
         val request: GraphRequest = GraphRequest.newMeRequest(
             token
         ) { `object`, response ->
-            Log.v("GlavnayaPageActivity", response.toString())
+            Log.v("MainStranicaActivity", response.toString())
 
             if (`object` != null) {
                 userEmail = `object`.getString("email")

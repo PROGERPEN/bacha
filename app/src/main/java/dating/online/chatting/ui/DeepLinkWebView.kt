@@ -1,4 +1,4 @@
-package body.hindu.shake.ui
+package dating.online.chatting.ui
 
 
 
@@ -25,9 +25,9 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.ProgressBar
 import com.google.firebase.analytics.FirebaseAnalytics
-import body.hindu.shake.Conversion
-import body.hindu.shake.R
-import body.hindu.shake._core.BaseActivity
+import dating.online.chatting.Conversion
+import dating.online.chatting.R
+import dating.online.chatting._core.BaseActivity
 import im.delight.android.webview.AdvancedWebView
 import kotlinx.android.synthetic.main.activity_web_view.*
 import java.io.File

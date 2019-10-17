@@ -1,4 +1,4 @@
-package body.hindu.shake
+package dating.online.chatting
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,7 +7,7 @@ import android.widget.Button
 import android.widget.SeekBar
 import android.widget.TextView
 
-class OprosnikActivity : AppCompatActivity() {
+class AnketkaActivity : AppCompatActivity() {
 
     lateinit var questionButton: Button
 
@@ -18,13 +18,13 @@ class OprosnikActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_oprosnik)
+        setContentView(R.layout.activity_anketka)
 
-        HeightSeekBar = findViewById(R.id.seek_rost_bar)
-        WeightSeekBar = findViewById(R.id.seek_ves_bar)
+        HeightSeekBar = findViewById(R.id.seek_height_bar)
+        WeightSeekBar = findViewById(R.id.seek_weight_bar)
         height = findViewById(R.id.textView5_height)
         weight = findViewById(R.id.textView8_weight)
-        questionButton = findViewById(R.id.voprosi_knopka)
+        questionButton = findViewById(R.id.question_knopka)
 
         WeightSeekBar.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener{
             override fun onStopTrackingTouch(seekBar: SeekBar) {
@@ -57,7 +57,7 @@ class OprosnikActivity : AppCompatActivity() {
         })
 
         questionButton.setOnClickListener {
-            startActivity(Intent(this@OprosnikActivity, ChtoLookingForActivity::class.java))
+            startActivity(Intent(this@AnketkaActivity, WhatIsheshForActivity::class.java))
         }
     }
 }

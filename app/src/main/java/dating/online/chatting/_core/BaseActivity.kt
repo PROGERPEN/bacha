@@ -1,4 +1,4 @@
-package body.hindu.shake._core
+package dating.online.chatting._core
 
 import android.os.Bundle
 import androidx.annotation.LayoutRes
@@ -11,8 +11,8 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings
-import body.hindu.shake.BuildConfig
-import body.hindu.shake.R
+import dating.online.chatting.BuildConfig
+import dating.online.chatting.R
 
 
 /**

@@ -7,7 +7,7 @@
                 android:background="@drawable/main_page_bg"
                 android:orientation="vertical"
 
-                tools:context="body.hindu.shake.GlavnayaPageActivity">
+                tools:context="dating.online.chatting.MainStranicaActivity">
 
     <ImageView
 
@@ -15,7 +15,7 @@
             android:layout_height="wrap_content" />
 
     <com.facebook.login.widget.LoginButton
-            android:id="@+id/lico_kniga_login_button"
+            android:id="@+id/reptiloid_company_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_above="@id/view1"
@@ -30,7 +30,7 @@
             android:id="@+id/view1"
             android:layout_width="fill_parent"
             android:layout_height="1dp"
-            android:layout_above="@id/sozdat_acc_knopka"
+            android:layout_above="@id/create_acc_knopochka"
             android:layout_marginLeft="24dp"
             android:layout_marginTop="16dp"
             android:layout_marginRight="24dp"
@@ -39,7 +39,7 @@
             android:background="#c0c0c0" />
 
     <Button
-            android:id="@+id/sozdat_acc_knopka"
+            android:id="@+id/create_acc_knopochka"
             style="@style/button_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
 
         <Button
 
-                android:id="@+id/vhod_knopka"
+                android:id="@+id/sign_in_knopochka"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent"

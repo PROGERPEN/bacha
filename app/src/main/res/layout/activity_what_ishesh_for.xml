@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#ffcfe2"
-        tools:context="body.hindu.shake.ChtoLookingForActivity">
+        tools:context="dating.online.chatting.WhatIsheshForActivity">
 
 
     <Button
@@ -24,7 +24,7 @@
             app:layout_constraintVertical_bias="1.0"/>
 
     <TextView
-            android:id="@+id/chego_ti_ishesh_tview"
+            android:id="@+id/tview_chego_opa_ishesh_tview"
             style="@style/Widget.AppCompat.TextView.SpinnerItem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
             app:layout_constraintVertical_bias="0.526">
 
         <RadioButton
-                android:id="@+id/muzhchine_lookin_radio"
+                android:id="@+id/muscul_looking_for_radio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -74,7 +74,7 @@
                 android:textSize="24sp" />
 
         <RadioButton
-                android:id="@+id/tyanku_lookin_radio"
+                android:id="@+id/dirku_looking_for_radio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"

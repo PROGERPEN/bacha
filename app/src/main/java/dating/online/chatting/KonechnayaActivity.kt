@@ -1,12 +1,12 @@
-package body.hindu.shake
+package dating.online.chatting
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class PostRegActivity : AppCompatActivity() {
+class KonechnayaActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_post_reg)
+        setContentView(R.layout.activity_konechnaya)
     }
 }

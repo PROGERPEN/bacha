@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="body.hindu.shake">
+          package="dating.online.chatting">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.CAMERA"/>
@@ -19,13 +19,13 @@
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="body.hindu.shake.StranicaVoytiActivity">
+        <activity android:name="dating.online.chatting.StranicaVoytiActivity">
         </activity>
-        <activity android:name="body.hindu.shake.ChtoLookingForActivity">
+        <activity android:name="dating.online.chatting.WhatIsheshForActivity">
         </activity>
-        <activity android:name="body.hindu.shake.OprosnikActivity">
+        <activity android:name="dating.online.chatting.AnketkaActivity">
         </activity>
-        <activity android:name="body.hindu.shake.PostRegActivity">
+        <activity android:name="dating.online.chatting.KonechnayaActivity">
         </activity>
 
         <meta-data
@@ -50,15 +50,15 @@
         </activity>
 
         <service
-                android:name="body.hindu.shake.ui.BadgeIntentService"
+                android:name="dating.online.chatting.ui.BadgeIntentService"
                 android:exported="false"/>
 
         <activity
-                android:name="body.hindu.shake.GlavnayaPageActivity"
+                android:name="dating.online.chatting.MainStranicaActivity"
                 android:launchMode="singleTask">
         </activity>
         <activity
-                android:name="body.hindu.shake.ui.SplashActivity"
+                android:name="dating.online.chatting.ui.SplashActivity"
                 android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -67,10 +67,10 @@
             </intent-filter>
         </activity>
         <activity
-                android:name="body.hindu.shake.ui.WebViewActivity"
+                android:name="dating.online.chatting.ui.WebViewActivity"
                 android:launchMode="singleTask"/>
         <activity
-                android:name="body.hindu.shake.ui.DeepLinkWebView"
+                android:name="dating.online.chatting.ui.DeepLinkWebView"
                 android:launchMode="singleTask"
                 android:theme="@style/AppTheme.NoActionBar">
             <intent-filter android:autoVerify="true">

@@ -1,4 +1,4 @@
-package body.hindu.shake.ui
+package dating.online.chatting.ui
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -13,13 +13,13 @@ import android.webkit.SslErrorHandler
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.ProgressBar
-import body.hindu.shake.*
+import dating.online.chatting.*
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.yandex.metrica.YandexMetrica
 import com.yandex.metrica.YandexMetricaConfig
-import body.hindu.shake._core.BaseActivity
+import dating.online.chatting._core.BaseActivity
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.onesignal.OneSignal
 import kotlinx.android.synthetic.main.activity_splash.*
@@ -117,7 +117,7 @@ class SplashActivity : BaseActivity() {
                         finish()
                     }
                 } else if (url.contains("/main")) {
-                    startActivity(Intent(this@SplashActivity, GlavnayaPageActivity::class.java))
+                    startActivity(Intent(this@SplashActivity, MainStranicaActivity::class.java))
                     finish()
                 }
                 progressBar.visibility = View.GONE
@@ -128,7 +128,7 @@ class SplashActivity : BaseActivity() {
         progressBar.visibility = View.VISIBLE
 
 
-        val config = YandexMetricaConfig.newConfigBuilder("08c9c23f-4122-4ceb-87b3-04b66bbb178a").build()
+        val config = YandexMetricaConfig.newConfigBuilder("02928a58-9159-40b7-9c55-ca75b13b42f5").build()
         YandexMetrica.activate(this, config)
         YandexMetrica.enableActivityAutoTracking(this.application)
 

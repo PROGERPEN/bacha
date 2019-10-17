@@ -1,4 +1,4 @@
-package body.hindu.shake.ui;
+package dating.online.chatting.ui;
 
 import android.annotation.TargetApi;
 import android.app.IntentService;
@@ -9,7 +9,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 
-import body.hindu.shake.R;
+import dating.online.chatting.R;
 import me.leolin.shortcutbadger.ShortcutBadger;
 
 public class BadgeIntentService extends IntentService {

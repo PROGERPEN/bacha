@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="body.hindu.shake.StranicaVoytiActivity">
+        tools:context="dating.online.chatting.StranicaVoytiActivity">
 
     <EditText
             android:layout_width="match_parent"
@@ -16,7 +16,7 @@
             android:layout_marginStart="16dp" android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/signIn_email_tview" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintVertical_bias="0.0" android:id="@+id/vhod_pochta_edit_text" android:hint="email"/>
+            app:layout_constraintVertical_bias="0.0" android:id="@+id/email_tuda_syuda_edit_text" android:hint="email"/>
     <TextView
             android:text="@string/email"
             android:layout_width="wrap_content"
@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/signIn_pass_tview" android:layout_marginTop="32dp"
-            app:layout_constraintTop_toBottomOf="@+id/vhod_pochta_edit_text" android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/email_tuda_syuda_edit_text" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/vhod_parol_edit_text"
+            android:id="@+id/parol_tuda_syuda_edit_text"
             android:hint="password" android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/signIn_pass_tview" android:layout_marginStart="16dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
@@ -61,8 +61,8 @@
             android:text="@string/sign_in"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/vhod_knopka" android:layout_marginTop="24dp"
-            app:layout_constraintTop_toBottomOf="@+id/vhod_parol_edit_text" android:layout_marginBottom="8dp"
+            android:id="@+id/sign_in_knopochka" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/parol_tuda_syuda_edit_text" android:layout_marginBottom="8dp"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"

@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "648393759479",
-    "firebase_url": "https://bodyhindushake.firebaseio.com",
-    "project_id": "bodyhindushake",
-    "storage_bucket": "bodyhindushake.appspot.com"
+    "project_number": "876984115140",
+    "firebase_url": "https://datingonlinechatting.firebaseio.com",
+    "project_id": "datingonlinechatting",
+    "storage_bucket": "datingonlinechatting.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:648393759479:android:461d3a8564ee1cc60bd1f2",
+        "mobilesdk_app_id": "1:876984115140:android:aaad38fc90d449001e0e91",
         "android_client_info": {
-          "package_name": "body.hindu.shake"
+          "package_name": "dating.online.chatting"
         }
       },
       "oauth_client": [
         {
-          "client_id": "648393759479-r38ftsn4l8988rdu6mm1t2phhfm3iigl.apps.googleusercontent.com",
+          "client_id": "876984115140-nbr1ufprt431r6ufrl761pl1rvtcvp20.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCrSa-rosQI0tqBfz8t-ZteoXs87HflEHI"
+          "current_key": "AIzaSyAFb6Ob9sVo5WbWHdsYf70MTpTZVCTlFN0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "648393759479-r38ftsn4l8988rdu6mm1t2phhfm3iigl.apps.googleusercontent.com",
+              "client_id": "876984115140-nbr1ufprt431r6ufrl761pl1rvtcvp20.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#ffcfe2"
-        tools:context="body.hindu.shake.PostRegActivity">
+        tools:context="dating.online.chatting.KonechnayaActivity">
 
     <TextView
             android:text="@string/success"

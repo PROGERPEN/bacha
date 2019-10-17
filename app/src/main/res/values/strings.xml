@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">Date one night</string>
+    <string name="app_name">Dating online. Сhatting</string>
     <string name="create_account">Create account</string>
     <string name="already_have_an_account">Already have an account</string>
     <string name="sign_in">Sign In</string>
-    <string name="facebook_app_id">390618068542191</string>
-    <string name="fb_login_protocol_scheme">fb390618068542191</string>
+    <string name="facebook_app_id">551170515638180</string>
+    <string name="fb_login_protocol_scheme">fb551170515638180</string>
     <string name="nickname">Nickname</string>
     <string name="birth_date">Birth Date</string>
     <string name="what_are_you_like">What are you like</string>
