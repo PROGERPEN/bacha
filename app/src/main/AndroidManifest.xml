@@ -12,9 +12,9 @@
 
     <application
             android:allowBackup="true"
-            android:icon="@drawable/meet_without_commitement_ico"
+            android:icon="@drawable/dating_online_chatting_ico"
             android:label="@string/app_name"
-            android:roundIcon="@drawable/meet_without_commitement_ico"
+            android:roundIcon="@drawable/dating_online_chatting_ico"
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true"
