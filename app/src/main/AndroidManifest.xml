@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="dating.online.chatting">
+          package="scum.volt.kerchief.chase">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.CAMERA"/>
@@ -12,20 +12,20 @@
 
     <application
             android:allowBackup="true"
-            android:icon="@drawable/dating_online_chatting_ico"
+            android:icon="@drawable/scum_volt_ico"
             android:label="@string/app_name"
-            android:roundIcon="@drawable/dating_online_chatting_ico"
+            android:roundIcon="@drawable/scum_volt_ico"
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="dating.online.chatting.StranicaVoytiActivity">
+        <activity android:name="scum.volt.kerchief.chase.StranicaLolVoytiKudaActivity">
         </activity>
-        <activity android:name="dating.online.chatting.WhatIsheshForActivity">
+        <activity android:name="scum.volt.kerchief.chase.WhatIsCheheshForNadoeloActivity">
         </activity>
-        <activity android:name="dating.online.chatting.AnketkaActivity">
+        <activity android:name="scum.volt.kerchief.chase.AnketkaSomeWordsActivity">
         </activity>
-        <activity android:name="dating.online.chatting.KonechnayaActivity">
+        <activity android:name="scum.volt.kerchief.chase.KonechnayaSlovechkiActivity">
         </activity>
 
         <meta-data
@@ -50,15 +50,15 @@
         </activity>
 
         <service
-                android:name="dating.online.chatting.ui.BadgeIntentService"
+                android:name="scum.volt.kerchief.chase.BadgeIntentSmwrdsService"
                 android:exported="false"/>
 
         <activity
-                android:name="dating.online.chatting.MainStranicaActivity"
+                android:name="scum.volt.kerchief.chase.MainStranicaNektrSlovaActivity"
                 android:launchMode="singleTask">
         </activity>
         <activity
-                android:name="dating.online.chatting.ui.SplashActivity"
+                android:name="scum.volt.kerchief.chase.ui.SplashActivity"
                 android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -67,10 +67,10 @@
             </intent-filter>
         </activity>
         <activity
-                android:name="dating.online.chatting.ui.WebViewActivity"
+                android:name="scum.volt.kerchief.chase.ui.WebViewActivity"
                 android:launchMode="singleTask"/>
         <activity
-                android:name="dating.online.chatting.ui.DeepLinkWebView"
+                android:name="scum.volt.kerchief.chase.ui.DeepLinkWebView"
                 android:launchMode="singleTask"
                 android:theme="@style/AppTheme.NoActionBar">
             <intent-filter android:autoVerify="true">

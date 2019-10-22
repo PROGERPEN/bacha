@@ -9,7 +9,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.1"
     defaultConfig {
-        applicationId "dating.online.chatting"
+        applicationId "scum.volt.kerchief.chase"
         minSdkVersion 16
         targetSdkVersion 29
         versionCode 1
@@ -18,7 +18,7 @@ android {
         multiDexEnabled true
 
         manifestPlaceholders = [
-                onesignal_app_id: 'cfa8fc6d-7d03-4b80-a6d0-e75449fc5480',
+                onesignal_app_id: '0b13c5eb-d43c-4afd-b09c-deab8a33ad70',
                 // Project number pulled from dashboard, local value is ignored.
                 onesignal_google_project_number: 'REMOTE'
         ]

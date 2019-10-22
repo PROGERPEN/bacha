@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "876984115140",
-    "firebase_url": "https://datingonlinechatting.firebaseio.com",
-    "project_id": "datingonlinechatting",
-    "storage_bucket": "datingonlinechatting.appspot.com"
+    "project_number": "273282568301",
+    "firebase_url": "https://scumvoltkerchiefchase.firebaseio.com",
+    "project_id": "scumvoltkerchiefchase",
+    "storage_bucket": "scumvoltkerchiefchase.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:876984115140:android:aaad38fc90d449001e0e91",
+        "mobilesdk_app_id": "1:273282568301:android:555d79be995aaada9b2f64",
         "android_client_info": {
-          "package_name": "dating.online.chatting"
+          "package_name": "scum.volt.kerchief.chase"
         }
       },
       "oauth_client": [
         {
-          "client_id": "876984115140-nbr1ufprt431r6ufrl761pl1rvtcvp20.apps.googleusercontent.com",
+          "client_id": "273282568301-8qhk99fq19q0is40uoaat821glndr68h.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAFb6Ob9sVo5WbWHdsYf70MTpTZVCTlFN0"
+          "current_key": "AIzaSyDbhd3ya7jLkb00fzhO5mqDVDjAkYiS7Nk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "876984115140-nbr1ufprt431r6ufrl761pl1rvtcvp20.apps.googleusercontent.com",
+              "client_id": "273282568301-8qhk99fq19q0is40uoaat821glndr68h.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
