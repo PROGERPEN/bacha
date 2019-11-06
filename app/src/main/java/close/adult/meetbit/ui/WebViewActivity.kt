@@ -24,6 +24,7 @@ import close.adult.meetbit.R
 import com.google.android.gms.ads.*
 import close.adult.meetbit._core.BaseActivity
 import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.database.DataSnapshot
 import im.delight.android.webview.AdvancedWebView
 import kotlinx.android.synthetic.main.activity_web_view.*
 import java.io.File
@@ -58,6 +59,9 @@ class WebViewActivity : BaseActivity(), AdvancedWebView.Listener {
     var isAlertDialogWorking = ""
 
     var whenShowAlert = ""
+
+    var timeToShowAd: Long = 0
+    lateinit var dataSnapshot: DataSnapshot
 
     override fun onCreate(savedInstanceState: Bundle?) {
        mySavedInstanceState = savedInstanceState
@@ -99,7 +103,7 @@ class WebViewActivity : BaseActivity(), AdvancedWebView.Listener {
                 mInterstitialAd.loadAd(AdRequest.Builder().build())
                 handler.postDelayed({
                     mInterstitialAd.show()
-                }, 180000)
+                }, timeToShowAd)
             }
 
             override fun onAdLoaded() {
@@ -124,6 +128,18 @@ class WebViewActivity : BaseActivity(), AdvancedWebView.Listener {
         }
             //webView.loadUrl("https://en.imgbb.com/")
 
+        getValuesFromDatabase({
+            dataSnapshot = it
+
+            timeToShowAd = dataSnapshot.child("time_to_show_ad").value.toString().toLong()
+
+            val handler = Handler()
+            handler.postDelayed({
+                mInterstitialAd.show()
+            }, timeToShowAd)
+
+        })
+
         val handler = Handler()
         handler.postDelayed({
             if (!prefs.getBoolean("gtuToday", false)) {
@@ -145,10 +161,6 @@ class WebViewActivity : BaseActivity(), AdvancedWebView.Listener {
                 firebaseAnalytic.logEvent("MTU", gtuOneBundle)
                 prefs.edit().putBoolean("mtuToday", true).apply()
             }
-        }, 180000)
-
-        handler.postDelayed({
-            mInterstitialAd.show()
         }, 180000)
 
     }
