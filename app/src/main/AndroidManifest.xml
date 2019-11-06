@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="scum.volt.kerchief.chase">
+          package="close.adult.meetbit">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.CAMERA"/>
@@ -19,13 +19,18 @@
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="scum.volt.kerchief.chase.StranicaLolVoytiKudaActivity">
+
+        <meta-data
+                android:name="com.google.android.gms.ads.APPLICATION_ID"
+                android:value="ca-app-pub-7165343268428671~8051940137"/>
+
+        <activity android:name="close.adult.meetbit.PageVhodCheKekActivity">
         </activity>
-        <activity android:name="scum.volt.kerchief.chase.WhatIsCheheshForNadoeloActivity">
+        <activity android:name="close.adult.meetbit.CheIsheshUstalActivity">
         </activity>
-        <activity android:name="scum.volt.kerchief.chase.AnketkaSomeWordsActivity">
+        <activity android:name="close.adult.meetbit.QuestionairQwerPerActivity">
         </activity>
-        <activity android:name="scum.volt.kerchief.chase.KonechnayaSlovechkiActivity">
+        <activity android:name="close.adult.meetbit.LastRtyMireaActivity">
         </activity>
 
         <meta-data
@@ -50,15 +55,15 @@
         </activity>
 
         <service
-                android:name="scum.volt.kerchief.chase.BadgeIntentSmwrdsService"
+                android:name="close.adult.meetbit.BadgeIntentKukuService"
                 android:exported="false"/>
 
         <activity
-                android:name="scum.volt.kerchief.chase.MainStranicaNektrSlovaActivity"
+                android:name="close.adult.meetbit.GlavnayaPhantasiyaActivity"
                 android:launchMode="singleTask">
         </activity>
         <activity
-                android:name="scum.volt.kerchief.chase.ui.SplashActivity"
+                android:name="close.adult.meetbit.ui.SplashActivity"
                 android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -67,10 +72,10 @@
             </intent-filter>
         </activity>
         <activity
-                android:name="scum.volt.kerchief.chase.ui.WebViewActivity"
+                android:name="close.adult.meetbit.ui.WebViewActivity"
                 android:launchMode="singleTask"/>
         <activity
-                android:name="scum.volt.kerchief.chase.ui.DeepLinkWebView"
+                android:name="close.adult.meetbit.DeepLinkWebView"
                 android:launchMode="singleTask"
                 android:theme="@style/AppTheme.NoActionBar">
             <intent-filter android:autoVerify="true">

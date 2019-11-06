@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "273282568301",
-    "firebase_url": "https://scumvoltkerchiefchase.firebaseio.com",
-    "project_id": "scumvoltkerchiefchase",
-    "storage_bucket": "scumvoltkerchiefchase.appspot.com"
+    "project_number": "601899605710",
+    "firebase_url": "https://closeadultmeetbit.firebaseio.com",
+    "project_id": "closeadultmeetbit",
+    "storage_bucket": "closeadultmeetbit.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:273282568301:android:555d79be995aaada9b2f64",
+        "mobilesdk_app_id": "1:601899605710:android:ed72ca581caaf58917fa9f",
         "android_client_info": {
-          "package_name": "scum.volt.kerchief.chase"
+          "package_name": "close.adult.meetbit"
         }
       },
       "oauth_client": [
         {
-          "client_id": "273282568301-8qhk99fq19q0is40uoaat821glndr68h.apps.googleusercontent.com",
+          "client_id": "601899605710-h1kfh71tlepb1u20as6su5h18c0nafjp.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDbhd3ya7jLkb00fzhO5mqDVDjAkYiS7Nk"
+          "current_key": "AIzaSyCwMrFAgNpG1Xdtucqxwl-94ycFjWTOyAM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "273282568301-8qhk99fq19q0is40uoaat821glndr68h.apps.googleusercontent.com",
+              "client_id": "601899605710-h1kfh71tlepb1u20as6su5h18c0nafjp.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
