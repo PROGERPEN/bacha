@@ -30,6 +30,7 @@
 
     </WebView>
 
+<!--    Баннер айди сюда-->
     <com.google.android.gms.ads.AdView
             android:id="@+id/adView_main"
             android:layout_width="wrap_content"

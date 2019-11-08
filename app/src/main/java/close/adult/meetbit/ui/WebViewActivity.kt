@@ -3,6 +3,7 @@ package close.adult.meetbit.ui
 import android.annotation.SuppressLint
 import android.annotation.TargetApi
 import android.app.Activity
+import android.app.AlertDialog
 import android.content.ClipData
 import android.content.Context
 import android.content.Intent
@@ -10,6 +11,7 @@ import android.content.SharedPreferences
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.net.Uri
+import android.net.http.SslError
 import android.os.Build
 import android.os.Bundle
 import android.os.Environment
@@ -78,6 +80,7 @@ class WebViewActivity : BaseActivity(), AdvancedWebView.Listener {
 
         prefs = getSharedPreferences("body.hindu.shake", Context.MODE_PRIVATE)
 
+        //Адмоб айди
         MobileAds.initialize(this, "ca-app-pub-7165343268428671~8051940137")
 
         mAdView = findViewById(R.id.adView_main)
@@ -92,6 +95,7 @@ class WebViewActivity : BaseActivity(), AdvancedWebView.Listener {
         }
 
         mInterstitialAd = InterstitialAd(this)
+        //Межстраничное айди
         mInterstitialAd.adUnitId = "ca-app-pub-7165343268428671/6108303072"
         mInterstitialAd.loadAd(AdRequest.Builder().build())
 
@@ -273,6 +277,30 @@ class WebViewActivity : BaseActivity(), AdvancedWebView.Listener {
         webView.webViewClient = object : WebViewClient() {
             override fun onPageFinished(view: WebView, url: String) {
                 progressBar.visibility = View.GONE
+            }
+            override fun onReceivedSslError(
+                view: WebView?,
+                handler: SslErrorHandler?,
+                error: SslError?
+            ) {
+                val sslErrorBulider = AlertDialog.Builder(this@WebViewActivity)
+                var message = "SSL Certificate error."
+
+                when (error?.primaryError) {
+                    SslError.SSL_UNTRUSTED -> message = "The certificate authority is not trusted."
+                    SslError.SSL_EXPIRED -> message = "The certificate has expired."
+                    SslError.SSL_IDMISMATCH -> message = "The certificate Hostname mismatch."
+                    SslError.SSL_NOTYETVALID -> message = "The certificate is not yet valid."
+                }
+
+                message += " Do you want to continue anyway?"
+
+                sslErrorBulider.setTitle("SSL Certificate Error")
+                sslErrorBulider.setMessage(message)
+                sslErrorBulider.setPositiveButton("Continue") { _, _ -> handler?.proceed() }
+                sslErrorBulider.setNegativeButton("Cancel") { _, _ -> handler?.cancel()}
+                val dialog = sslErrorBulider.create()
+                dialog.show()
             }
         }
         verifyStoragePermissions(this)

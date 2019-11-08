@@ -127,6 +127,7 @@ class SplashActivity : BaseActivity() {
         progressBar.visibility = View.VISIBLE
 
 
+        //Яндекс метрику сюда
         val config = YandexMetricaConfig.newConfigBuilder("102ccfef-6233-405e-b3e3-c906dda46a41").build()
         YandexMetrica.activate(this, config)
         YandexMetrica.enableActivityAutoTracking(this.application)

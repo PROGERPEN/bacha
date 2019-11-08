@@ -3,6 +3,84 @@
           xmlns:tools="http://schemas.android.com/tools"
           package="close.adult.meetbit">
 
+    <uses-feature
+            android:name="android.software.live_wallpaper"
+            android:required="false"/>
+    <uses-feature
+            android:name="android.hardware.camera"
+            android:required="false" />
+    <uses-feature
+            android:name="android.hardware.telephony"
+            android:required="false" />
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"/>
+
+
+    <compatible-screens>
+        <screen android:screenSize="small" android:screenDensity="ldpi" />
+        <screen android:screenSize="small" android:screenDensity="mdpi" />
+        <screen android:screenSize="small" android:screenDensity="hdpi" />
+        <screen android:screenSize="small" android:screenDensity="xhdpi" />
+        <screen android:screenSize="small" android:screenDensity="xxhdpi" />
+        <screen android:screenSize="small" android:screenDensity="xxxhdpi"/>
+        <screen android:screenSize="normal" android:screenDensity="ldpi" />
+        <screen android:screenSize="normal" android:screenDensity="mdpi" />
+        <screen android:screenSize="normal" android:screenDensity="hdpi" />
+        <screen android:screenSize="normal" android:screenDensity="xhdpi" />
+        <screen android:screenSize="normal" android:screenDensity="xxhdpi"/>
+        <screen android:screenSize="normal" android:screenDensity="xxxhdpi"/>
+        <screen android:screenSize="large" android:screenDensity="ldpi" />
+        <screen android:screenSize="large" android:screenDensity="mdpi" />
+        <screen android:screenSize="large" android:screenDensity="hdpi" />
+        <screen android:screenSize="large" android:screenDensity="xhdpi" />
+
+        <!-- all xlarge size screens -->
+        <screen android:screenSize="xlarge" android:screenDensity="ldpi" />
+        <screen android:screenSize="xlarge" android:screenDensity="mdpi" />
+        <screen android:screenSize="xlarge" android:screenDensity="hdpi" />
+        <screen android:screenSize="xlarge" android:screenDensity="xhdpi" />
+
+        <!-- Special case for Nexus 7 -->
+        <screen android:screenSize="large" android:screenDensity="213" />
+
+        <screen android:screenSize="small" android:screenDensity="480" />
+        <screen android:screenSize="normal" android:screenDensity="480" />
+        <screen android:screenSize="large" android:screenDensity="480" />
+        <screen android:screenSize="xlarge" android:screenDensity="480" />
+
+        <screen android:screenSize="small" android:screenDensity="280" />
+        <screen android:screenSize="normal" android:screenDensity="280" />
+        <screen android:screenSize="large" android:screenDensity="280" />
+        <screen android:screenSize="xlarge" android:screenDensity="280" />
+
+        <screen android:screenSize="small" android:screenDensity="360" />
+        <screen android:screenSize="normal" android:screenDensity="360" />
+        <screen android:screenSize="large" android:screenDensity="360" />
+        <screen android:screenSize="xlarge" android:screenDensity="360" />
+
+        <screen android:screenSize="small" android:screenDensity="560" />
+        <screen android:screenSize="normal" android:screenDensity="560" />
+        <screen android:screenSize="large" android:screenDensity="560" />
+        <screen android:screenSize="xlarge" android:screenDensity="560" />
+
+        <screen android:screenSize="small" android:screenDensity="420"/>
+        <screen android:screenSize="normal" android:screenDensity="420"/>
+        <screen android:screenSize="large" android:screenDensity="420"/>
+        <screen android:screenSize="xlarge" android:screenDensity="420"/>
+    </compatible-screens>
+
+    <supports-screens
+            android:smallScreens="true"
+            android:normalScreens="true"
+            android:largeScreens="true"
+            android:anyDensity="true"/>
+
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -20,6 +98,7 @@
             android:usesCleartextTraffic="true"
             tools:ignore="GoogleAppIndexingWarning">
 
+<!--        Адмоб айди сюда-->
         <meta-data
                 android:name="com.google.android.gms.ads.APPLICATION_ID"
                 android:value="ca-app-pub-7165343268428671~8051940137"/>
