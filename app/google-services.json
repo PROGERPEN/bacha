@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "601899605710",
-    "firebase_url": "https://closeadultmeetbit.firebaseio.com",
-    "project_id": "closeadultmeetbit",
-    "storage_bucket": "closeadultmeetbit.appspot.com"
+    "project_number": "741693910221",
+    "firebase_url": "https://meaningtormentidyllic.firebaseio.com",
+    "project_id": "meaningtormentidyllic",
+    "storage_bucket": "meaningtormentidyllic.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:601899605710:android:ed72ca581caaf58917fa9f",
+        "mobilesdk_app_id": "1:741693910221:android:16c7347da73fa316a40d84",
         "android_client_info": {
-          "package_name": "close.adult.meetbit"
+          "package_name": "meaning.torment.idyllic"
         }
       },
       "oauth_client": [
         {
-          "client_id": "601899605710-h1kfh71tlepb1u20as6su5h18c0nafjp.apps.googleusercontent.com",
+          "client_id": "741693910221-r9tn5vhtjrp6v49n5j14v9o3k0i4u0m4.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCwMrFAgNpG1Xdtucqxwl-94ycFjWTOyAM"
+          "current_key": "AIzaSyCYz4OAHTpoPuLoN5w1ELm0GWbirX5AKkI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "601899605710-h1kfh71tlepb1u20as6su5h18c0nafjp.apps.googleusercontent.com",
+              "client_id": "741693910221-r9tn5vhtjrp6v49n5j14v9o3k0i4u0m4.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

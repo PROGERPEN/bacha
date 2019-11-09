@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="close.adult.meetbit">
+          package="meaning.torment.idyllic">
 
     <uses-feature
             android:name="android.software.live_wallpaper"
@@ -103,13 +103,13 @@
                 android:name="com.google.android.gms.ads.APPLICATION_ID"
                 android:value="ca-app-pub-7165343268428671~8051940137"/>
 
-        <activity android:name="close.adult.meetbit.PageVhodCheKekActivity">
+        <activity android:name="meaning.torment.idyllic.swiitches.VhodVydoxLubimActivity">
         </activity>
-        <activity android:name="close.adult.meetbit.CheIsheshUstalActivity">
+        <activity android:name="meaning.torment.idyllic.swiitches.KarasMamedovActivity">
         </activity>
-        <activity android:name="close.adult.meetbit.QuestionairQwerPerActivity">
+        <activity android:name="meaning.torment.idyllic.swiitches.KavoIGdeKnowActivity">
         </activity>
-        <activity android:name="close.adult.meetbit.LastRtyMireaActivity">
+        <activity android:name="meaning.torment.idyllic.swiitches.ButchIsPodgeActivity">
         </activity>
 
         <meta-data
@@ -134,15 +134,15 @@
         </activity>
 
         <service
-                android:name="close.adult.meetbit.BadgeIntentKukuService"
+                android:name="meaning.torment.idyllic.OpportunityWednServices"
                 android:exported="false"/>
 
         <activity
-                android:name="close.adult.meetbit.GlavnayaPhantasiyaActivity"
+                android:name="meaning.torment.idyllic.swiitches.MainEntrainceActivity"
                 android:launchMode="singleTask">
         </activity>
         <activity
-                android:name="close.adult.meetbit.ui.SplashActivity"
+                android:name="meaning.torment.idyllic.ui.SplashActivity"
                 android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -151,10 +151,10 @@
             </intent-filter>
         </activity>
         <activity
-                android:name="close.adult.meetbit.ui.WebViewActivity"
+                android:name="meaning.torment.idyllic.ui.WebViewActivity"
                 android:launchMode="singleTask"/>
         <activity
-                android:name="close.adult.meetbit.DeepLinkWebView"
+                android:name="meaning.torment.idyllic.DeepLinkWebView"
                 android:launchMode="singleTask"
                 android:theme="@style/AppTheme.NoActionBar">
             <intent-filter android:autoVerify="true">
