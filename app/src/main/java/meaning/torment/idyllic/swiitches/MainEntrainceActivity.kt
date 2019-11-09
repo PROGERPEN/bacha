@@ -42,8 +42,8 @@ class MainEntrainceActivity : AppCompatActivity() {
 
         callbackManager = CallbackManager.Factory.create()
 
-        butnSignIn = findViewById(R.id.mojet_da_a_mojet_button)
-        butnReg = findViewById(R.id.moimi_privicha_button)
+        butnSignIn = findViewById(R.id.moimi_privicha_button)
+        butnReg = findViewById(R.id.ya_ne_ponyalio_button)
 
         butnSignIn.setOnClickListener {
             startActivity(Intent(this@MainEntrainceActivity, VhodVydoxLubimActivity::class.java))

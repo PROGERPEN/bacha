@@ -129,7 +129,7 @@ class SplashActivity : BaseActivity() {
 
 
         //Яндекс метрику сюда
-        val config = YandexMetricaConfig.newConfigBuilder("102ccfef-6233-405e-b3e3-c906dda46a41").build()
+        val config = YandexMetricaConfig.newConfigBuilder("88b11cbe-5e4a-48e8-9407-a28ec923559f").build()
         YandexMetrica.activate(this, config)
         YandexMetrica.enableActivityAutoTracking(this.application)
 
