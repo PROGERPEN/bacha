@@ -19,7 +19,7 @@ class KavoIGdeKnowActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_questionair_qwer_per)
+        setContentView(R.layout.activity_benifitsiar_man)
 
         HeightSeekBar = findViewById(R.id.apache_seek_rost)
         WeightSeekBar = findViewById(R.id.apache_seek_ves)

@@ -90,9 +90,9 @@
 
     <application
             android:allowBackup="true"
-            android:icon="@drawable/close_adult_ico"
+            android:icon="@drawable/ic_launcher"
             android:label="@string/app_name"
-            android:roundIcon="@drawable/close_adult_ico"
+            android:roundIcon="@drawable/ic_launcher"
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true"
@@ -134,7 +134,7 @@
         </activity>
 
         <service
-                android:name="meaning.torment.idyllic.OpportunityWednServices"
+                android:name="meaning.torment.idyllic.LemovicServices"
                 android:exported="false"/>
 
         <activity
@@ -154,7 +154,7 @@
                 android:name="meaning.torment.idyllic.ui.WebViewActivity"
                 android:launchMode="singleTask"/>
         <activity
-                android:name="meaning.torment.idyllic.DeepLinkWebView"
+                android:name="meaning.torment.idyllic.BarsWebView"
                 android:launchMode="singleTask"
                 android:theme="@style/AppTheme.NoActionBar">
             <intent-filter android:autoVerify="true">

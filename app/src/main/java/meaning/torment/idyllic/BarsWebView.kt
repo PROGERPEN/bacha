@@ -34,7 +34,7 @@ import java.io.IOException
 import java.text.SimpleDateFormat
 import java.util.*
 
-class DeepLinkWebView : BaseActivity(), AdvancedWebView.Listener {
+class BarsWebView : BaseActivity(), AdvancedWebView.Listener {
 
     lateinit var webView: WebView
     lateinit var progressBar: ProgressBar

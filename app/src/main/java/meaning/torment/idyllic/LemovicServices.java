@@ -11,14 +11,14 @@ import android.os.Build;
 
 import me.leolin.shortcutbadger.ShortcutBadger;
 
-public class OpportunityWednServices extends IntentService {
+public class LemovicServices extends IntentService {
 
     private static final String NOTIFICATION_CHANNEL = "com.dollo.foryou";
 
     private int notId = 0;
 
-    public OpportunityWednServices() {
-        super("OpportunityWednServices");
+    public LemovicServices() {
+        super("LemovicServices");
     }
 
     private NotificationManager mNotificationManager;
